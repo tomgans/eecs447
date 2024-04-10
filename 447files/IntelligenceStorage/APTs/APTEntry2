@@ -1,0 +1,4 @@
+number: APT28
+overview: APT28, aka FANCY BEAR, or Sofacy, is an APT observed targeting conventional computers and mobile devices. Common TTPs include phishing messages, and credential harvesting via spoofed websites. Crowdstrike issued a blog about APT28 at (https://www.crowdstrike.com/blog/who-is-fancy-bear/).
+targetSectors: European military organizations
+previousAttacks: Intrusions into the German Bundestag and France's TV5 Monde TV station in April 2015.

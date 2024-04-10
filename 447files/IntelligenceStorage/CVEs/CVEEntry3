@@ -1,0 +1,4 @@
+CVEID: CVE-2024-29745
+systemID: Android Pixel
+description: CVE affects Android Pixel devices, and is a vulnerability pertainging to information disclosure of devices. More information can be found at: (https://nvd.nist.gov/vuln/detail/CVE-2024-29745)
+dateCreated: 04/05/2024

@@ -1,0 +1,4 @@
+CVEID: CVE-2023-38035
+systemID: Apache 9.18.0
+description: CVE affects apache systems up-to, and including, 9.18.0. Vulnerability is Ivanti Sentry Authentication Bypass Vulnerability, requiring mitigations per vendor instructions or discontinuation of affected systems. More info at: (https://nvd.nist.gov/vuln/detail/CVE-2023-38035)
+dateCreated: 08/22/2023
