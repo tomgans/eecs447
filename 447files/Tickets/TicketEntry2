@@ -1,4 +1,5 @@
 ticketID: 133
+userID: Ashley13
 issue: Volt-typhoon Critical advisory needs review
 description: CISA and intelligence community government partners issued an advisory regarding the state sponsored APT known as volt-typhoon. Analysts need to research APT and our system assets to ensure resiliency against cyber attacks. https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a
 status: Completed
