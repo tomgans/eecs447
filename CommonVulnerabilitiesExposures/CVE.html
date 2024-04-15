@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlueWatch | CVEs</title>
+        <link href="../style.css"  rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <center><h1>BlueWatch</h1></center>
+        <h2>Register CVE</h2>
+        <form method="POST" action="cvePHP/registerCVE.php">
+            <label for="CVEID">CVE ID:</label></br>
+            <input type="text" name="CVEID"></br></br>
+            <label for="systemID">System ID:</label></br>
+            <input type="text" name="systemID"></br>
+            <label for="description">Description:</label></br>
+            <input type="text" name="description"></br></br>
+            <label for="dateCreated">Date Created:</label></br>
+            <input type="date" name="dateCreated"></br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

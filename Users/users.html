@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlueWatch | Users</title>
+        <link href="../style.css"  rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <center><h1>BlueWatch</h1></center>
+        <h2>Register user</h2>
+        <form method="POST" action="usersPHP/registerUser.php">
+            <label for="userID">Username:</label></br>
+            <input type="text" name="userID"></br></br>
+            <label for="password">Password:</label></br>
+            <input type="password" name="password"></br></br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Filter users based on role</h2>
+        <form method="POST" action="usersPHP/rolesFilter.php">
+            <input type="radio" value="Analyst" name="role">Analyst</br>
+            <input type="radio" value="Admin" name="role">Admin</br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
