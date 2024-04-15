@@ -7,7 +7,7 @@
     <body>
         <center><h1>BlueWatch</h1></center>
         <h2>Create a new ticket</h2>
-        <form id="post" method="POST" action="ticketsPHP/createTicket.php">
+        <form method="POST" action="ticketsPHP/createTicket.php">
             <label for="ticketID">Ticket ID:</label></br>
             <input type="text" name="ticketID"></br></br>
             <label for="userID">User ID:</label></br>
@@ -20,6 +20,12 @@
             <input type="text" name="status"></br></br>
             <label for="dateCreated">Date Created:</label></br>
             <input type="date" name="dateCreated"></br></br>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Completed vs Issued Tickets</h2>
+        <form method="POST" action="ticketsPHP/statusFilter.php">
+            <input type="radio" value="Issued" name="status">Issued</br>
+            <input type="radio" value="Completed" name="status">Completed</br>
             <input type="submit" value="Submit">
         </form>
     </body>
