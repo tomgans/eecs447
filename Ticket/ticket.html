@@ -5,6 +5,45 @@
         <link href="../style.css"  rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <div class="container">
+			<div class="sidebar">
+				<h1>BlueWatch</h1>
+				<a href="../Users/users.html">Users</a>
+				<a href="../Ticket/ticket.html">Tickets</a>
+				<a href="../System/system.html">Systems</a>
+				<a href="../AdvancedPersistentThreat/APT.html"
+					>Advanced Persistent Threats (APTs)</a
+				>
+				<a href="../CommonVulnerabilitiesExposures/CVE.html"
+					>Common Vulnerabilities and Exposures (CVEs)</a
+				>
+				<a href="../DefensiveTTP/TTP.html">Defensive TTPs</a>
+			</div>
+			<div class="content">
+                <center><h1>BlueWatch</h1></center>
+                <h2>Create a new ticket</h2>
+                <form method="POST" action="ticketPHP/createTicket.php">
+                    <label for="ticketID">Ticket ID:</label></br>
+                    <input type="text" name="ticketID"></br></br>
+                    <label for="userID">User ID:</label></br>
+                    <input type="text" name="userID"></br></br>
+                    <label for="issue">Issue:</label></br>
+                    <input type="text" name="issue"></br></br>
+                    <label for="description">Description:</label></br>
+                    <textarea type="textarea" name="description"></textarea></br></br>
+                    <label for="status">Status:</label></br>
+                    <input type="text" name="status"></br></br>
+                    <label for="dateCreated">Date Created:</label></br>
+                    <input type="date" name="dateCreated"></br></br>
+                    <input type="submit" value="Submit">
+                </form>
+                <h2>Completed vs Issued Tickets</h2>
+                <form method="POST" action="ticketPHP/statusFilter.php">
+                    <input type="radio" value="Issued" name="status">Issued</br>
+                    <input type="radio" value="Completed" name="status">Completed</br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         <center><h1>BlueWatch</h1></center>
         <h2>Create a new ticket</h2>
         <form method="POST" action="ticketPHP/createTicket.php">

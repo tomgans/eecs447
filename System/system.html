@@ -5,16 +5,32 @@
         <link href="../style.css"  rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center><h1>BlueWatch</h1></center>
-        <h2>Register system</h2>
-        <form method="POST" action="systemPHP/registerSystem.php">
-            <label for="systemID">System ID:</label></br>
-            <input type="text" name="systemID"></br></br>
-            <label for="systemName">System Name:</label></br>
-            <input type="text" name="systemName"></br></br>
-            <label for="versionNumber">Version Number:</label></br>
-            <input type="text" name="versionNumber"></br></br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container">
+			<div class="sidebar">
+				<h1>BlueWatch</h1>
+				<a href="../Users/users.html">Users</a>
+				<a href="../Ticket/ticket.html">Tickets</a>
+				<a href="../System/system.html">Systems</a>
+				<a href="../AdvancedPersistentThreat/APT.html"
+					>Advanced Persistent Threats (APTs)</a
+				>
+				<a href="../CommonVulnerabilitiesExposures/CVE.html"
+					>Common Vulnerabilities and Exposures (CVEs)</a
+				>
+				<a href="../DefensiveTTP/TTP.html">Defensive TTPs</a>
+			</div>
+			<div class="content">
+                <center><h1>BlueWatch</h1></center>
+                <h2>Register system</h2>
+                <form method="POST" action="systemPHP/registerSystem.php">
+                    <label for="systemID">System ID:</label></br>
+                    <input type="text" name="systemID"></br></br>
+                    <label for="systemName">System Name:</label></br>
+                    <input type="text" name="systemName"></br></br>
+                    <label for="versionNumber">Version Number:</label></br>
+                    <input type="text" name="versionNumber"></br></br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
     </body>
 </html>

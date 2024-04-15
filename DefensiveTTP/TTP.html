@@ -5,16 +5,32 @@
         <link href="../style.css"  rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center><h1>BlueWatch</h1></center>
-        <h2>Register TTP</h2>
-        <form method="POST" action="ttpPHP/registerTTP.php">
-            <label for="TTPID">TTP ID:</label></br>
-            <input type="text" name="TTPID"></br></br>
-            <label for="URL">URL:</label></br>
-            <input type="text" name="URL"></br>
-            <label for="description">Description:</label></br>
-            <input type="text" name="description"></br></br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container">
+			<div class="sidebar">
+				<h1>BlueWatch</h1>
+				<a href="../Users/users.html">Users</a>
+				<a href="../Ticket/ticket.html">Tickets</a>
+				<a href="../System/system.html">Systems</a>
+				<a href="../AdvancedPersistentThreat/APT.html"
+					>Advanced Persistent Threats (APTs)</a
+				>
+				<a href="../CommonVulnerabilitiesExposures/CVE.html"
+					>Common Vulnerabilities and Exposures (CVEs)</a
+				>
+				<a href="../DefensiveTTP/TTP.html">Defensive TTPs</a>
+			</div>
+			<div class="content">
+                <center><h1>BlueWatch</h1></center>
+                <h2>Register TTP</h2>
+                <form method="POST" action="ttpPHP/registerTTP.php">
+                    <label for="TTPID">TTP ID:</label></br>
+                    <input type="text" name="TTPID"></br></br>
+                    <label for="URL">URL:</label></br>
+                    <input type="text" name="URL"></br>
+                    <label for="description">Description:</label></br>
+                    <input type="text" name="description"></br></br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
     </body>
 </html>
