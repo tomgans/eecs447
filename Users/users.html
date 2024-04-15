@@ -27,7 +27,7 @@
 						<div class="login-card">
 							<form
 								method="POST"
-								action="usersPHP/registerUser.php"
+								action=""
 								class="login-form"
 							>
 								<label for="userID">Username:</label>
@@ -49,7 +49,7 @@
 							<h2>Filter users based on role</h2>
 							<form
 								method="POST"
-								action="usersPHP/rolesFilter.php"
+								action=""
 								class="role-form"
 							>
 								<input
@@ -70,3 +70,31 @@
 			</div>
 	</body>
 </html>
+<?php
+    $connection = mysqli_connect('mysql.eecs.ku.edu', '447s24_s661a552', 're9oCeeN') or die('Could not connect: ' . mysql_error());
+    mysqli_select_db($connection, '447s24_s661a552') or die('Could not select database');
+    ini_set('display_errors', 1);
+    if (isset($_POST["role"])) {
+        $role = $_POST["role"];
+        $query = "SELECT * FROM Users WHERE roles = '$role'";
+        $queryResult = mysqli_query($connection, $query) or die('Query failed: ' . mysql_error());
+        if (mysqli_num_rows($queryResult) > 0)
+        {
+            while ($row = mysqli_fetch_assoc($queryResult))
+            {
+                echo $row["userID"].$row["roles"].$row["permissions"];
+                echo "</br>";
+            }
+        }
+    }
+    if (isset($_POST["userID"])) {
+        $userID = $_POST["userID"];
+        $password = $_POST["password"];
+        $name = $_POST["userName"];
+        $roles = "Analyst";
+        $permissions = "rx";
+        $query = "INSERT INTO Users (userID, name, password, roles, permissions) VALUES ('$userID', '$name', '$password', '$roles', '$permissions')";
+        mysqli_query($connection, $query) or die('Query failed: ' . mysql_error());
+        echo "<h1>User Registered</h1>";
+    }
+?>
