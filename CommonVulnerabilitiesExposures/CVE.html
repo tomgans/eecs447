@@ -18,5 +18,15 @@
             <input type="date" name="dateCreated"></br>
             <input type="submit" value="Submit">
         </form>
+        <h2>Filter CVE by system</h2>
+        <form method="POST" action="cvePHP/filterSystem.php">
+            <select name="systems">
+                <option value="officePrinter">officePrinter</option>
+                <option value="Linux OS">Linux OS</option>
+                <option value="Android Device">Android Device</option>
+                <option value="Linear eMerge E3-Series">Linear eMerge E3-Series</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>

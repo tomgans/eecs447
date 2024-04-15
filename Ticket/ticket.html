@@ -28,5 +28,21 @@
             <input type="radio" value="Completed" name="status">Completed</br>
             <input type="submit" value="Submit">
         </form>
+        <h2>Sort tickets by user</h2>
+        <form method="POST" action="ticketPHP/userFilter.php">
+            <select name="users">
+                <option value="Joe Smith">Joe Smith</option>
+                <option value="Ashley Jones">Ashley Jones</option>
+                <option value="Bob Root">Bob Root</option>
+                <option value="Alice Jones">Alice Jones</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Mark ticket as completed</h2>
+        <form method="POST" action="ticketPHP/markComplete.php">
+            <label for="ticketID">Ticket ID:</label>
+            <input type="text" name="ticketID">
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
