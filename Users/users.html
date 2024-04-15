@@ -52,16 +52,15 @@
 								action=""
 								class="role-form"
 							>
+							<label for="analyst">Analyst</label>
 								<input
 									type="radio"
 									value="Analyst"
 									name="role"
 									id="analyst"
-								/><label for="analyst">Analyst</label>
-								<input type="radio" value="Admin" name="role" id="admin" /><label
-									for="admin"
-									>Admin</label
-								>
+								/>
+								<label for="admin">Admin</label>
+								<input type="radio" value="Admin" name="role" id="admin" />
 								<input type="submit" value="Submit" class="role-submit" />
 							</form>
 						</div>
@@ -70,7 +69,7 @@
 			</div>
 	</body>
 </html>
-<?php
+<!-- <?php
     $connection = mysqli_connect('mysql.eecs.ku.edu', '447s24_s661a552', 're9oCeeN') or die('Could not connect: ' . mysql_error());
     mysqli_select_db($connection, '447s24_s661a552') or die('Could not select database');
     ini_set('display_errors', 1);
@@ -97,4 +96,4 @@
         mysqli_query($connection, $query) or die('Query failed: ' . mysql_error());
         echo "<h1>User Registered</h1>";
     }
-?>
+?> -->

@@ -95,9 +95,6 @@ body, html {
     margin-right: 5px; 
 }
 
-.content input[type="radio"] + label {
-    display: inline; 
-}
 
 @media (max-width: 600px) {
     .content {
@@ -151,7 +148,7 @@ body, html {
 
 .login-form input[type="text"],
 .login-form input[type="password"],
-.role-form input[type="radio"] + label {
+.role-form input[type="radio"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
