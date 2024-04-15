@@ -5,18 +5,35 @@
         <link href="../style.css"  rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center><h1>BlueWatch</h1></center>
-        <h2>Register APT</h2>
-        <form method="POST" action="aptPHP/registerAPT.php">
-            <label for="number">Number:</label></br>
-            <input type="text" name="number"></br></br>
-            <label for="overview">Overview:</label></br>
-            <input type="text" name="overview"></br>
-            <label for="targetSectors">Target Sectors:</label></br>
-            <input type="text" name="targetSectors"></br></br>
-            <label for="previousAttacks">Previous Attacks:</label></br>
-            <input type="text" name="previousAttacks"></br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container">
+			<div class="sidebar">
+				<h1>BlueWatch</h1>
+				<a href="../Users/users.html">Users</a>
+				<a href="../Ticket/ticket.html">Tickets</a>
+				<a href="../System/system.html">Systems</a>
+				<a href="../AdvancedPersistentThreat/APT.html"
+					>Advanced Persistent Threats (APTs)</a
+				>
+				<a href="../CommonVulnerabilitiesExposures/CVE.html"
+					>Common Vulnerabilities and Exposures (CVEs)</a
+				>
+				<a href="../DefensiveTTP/TTP.html">Defensive TTPs</a>
+			</div>
+			<div class="content">
+				<center><h1>BlueWatch</h1></center>
+                <h2>Register APT</h2>
+                <form method="POST" action="aptPHP/registerAPT.php">
+                    <label for="number">Number:</label></br>
+                    <input type="text" name="number"></br></br>
+                    <label for="overview">Overview:</label></br>
+                    <input type="text" name="overview"></br>
+                    <label for="targetSectors">Target Sectors:</label></br>
+                    <input type="text" name="targetSectors"></br></br>
+                    <label for="previousAttacks">Previous Attacks:</label></br>
+                    <input type="text" name="previousAttacks"></br>
+                    <input type="submit" value="Submit">
+                </form>
+			</div>
+		</div>
     </body>
 </html>

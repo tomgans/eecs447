@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BlueWatch | Users</title>
-        <link href="../style.css"  rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <center><h1>BlueWatch</h1></center>
-        <h2>Register user</h2>
-        <form method="POST" action="usersPHP/registerUser.php">
-            <label for="userID">Username:</label></br>
-            <input type="text" name="userID"></br></br>
-            <label for="password">Password:</label></br>
-            <input type="password" name="password"></br></br>
-            <input type="submit" value="Submit">
-        </form>
-        <h2>Filter users based on role</h2>
-        <form method="POST" action="usersPHP/rolesFilter.php">
-            <input type="radio" value="Analyst" name="role">Analyst</br>
-            <input type="radio" value="Admin" name="role">Admin</br>
-            <input type="submit" value="Submit">
-        </form>
-
-    </body>
+	<head>
+		<title>BlueWatch | Users</title>
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<h1>BlueWatch</h1>
+				<a href="../Users/users.html">Users</a>
+				<a href="../Ticket/ticket.html">Tickets</a>
+				<a href="../System/system.html">Systems</a>
+				<a href="../AdvancedPersistentThreat/APT.html"
+					>Advanced Persistent Threats (APTs)</a
+				>
+				<a href="../CommonVulnerabilitiesExposures/CVE.html"
+					>Common Vulnerabilities and Exposures (CVEs)</a
+				>
+				<a href="../DefensiveTTP/TTP.html">Defensive TTPs</a>
+			</div>
+			<div class="content">
+				<div id="login-page">
+					<div class="login-container">
+						<h1 class="header">BlueWatch</h1>
+						<h2 class="welcome">Welcome Back</h2>
+						<div class="login-card">
+							<form
+								method="POST"
+								action="usersPHP/registerUser.php"
+								class="login-form"
+							>
+								<label for="userID">Username:</label>
+								<input
+									type="text"
+									placeholder="Username"
+									name="userID"
+									id="userID"
+								/>
+								<label for="password">Password:</label>
+								<input
+									type="password"
+									placeholder="Password"
+									name="password"
+									id="password"
+								/>
+								<input type="submit" value="Login" class="login-button" />
+							</form>
+							<h2>Filter users based on role</h2>
+							<form
+								method="POST"
+								action="usersPHP/rolesFilter.php"
+								class="role-form"
+							>
+								<input
+									type="radio"
+									value="Analyst"
+									name="role"
+									id="analyst"
+								/><label for="analyst">Analyst</label>
+								<input type="radio" value="Admin" name="role" id="admin" /><label
+									for="admin"
+									>Admin</label
+								>
+								<input type="submit" value="Submit" class="role-submit" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
 </html>
